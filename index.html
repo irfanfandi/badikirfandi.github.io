@@ -23,31 +23,51 @@
 	<link rel="stylesheet" href="https://irfanfandi.github.io/css/flaticon.css">
 	<link rel="stylesheet" href="https://irfanfandi.github.io/css/icomoon.css">
 	<link rel="stylesheet" href="https://irfanfandi.github.io/css/style.css">
+	<style>
+		@media (max-width: 768px) {
+			.carousel-inner .carousel-item>div {
+				display: none;
+			}
+
+			.carousel-inner .carousel-item>div:first-child {
+				display: block;
+			}
+		}
+
+		.carousel-inner .carousel-item.active,
+		.carousel-inner .carousel-item-next,
+		.carousel-inner .carousel-item-prev {
+			display: flex;
+		}
+
+		/* display 3 */
+		@media (min-width: 768px) {
+
+			.carousel-inner .carousel-item-right.active,
+			.carousel-inner .carousel-item-next {
+				transform: translateX(33.333%);
+			}
+
+			.carousel-inner .carousel-item-left.active,
+			.carousel-inner .carousel-item-prev {
+				transform: translateX(-33.333%);
+			}
+		}
+
+		.carousel-inner .carousel-item-right,
+		.carousel-inner .carousel-item-left {
+			transform: translateX(0);
+		}
+
+		.card-body {
+			min-height: 200px;
+		}
+	</style>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background: #171923;">
 
 
-	<!-- <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="https://irfanfandi.github.io/index.html"></a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="https://irfanfandi.github.io/#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="https://irfanfandi.github.io/#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="https://irfanfandi.github.io/#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="https://irfanfandi.github.io/#services-section" class="nav-link"><span>Services</span></a></li>
-	          <li class="nav-item"><a href="https://irfanfandi.github.io/#skills-section" class="nav-link"><span>Skills</span></a></li>
-	          <li class="nav-item"><a href="https://irfanfandi.github.io/#projects-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="https://irfanfandi.github.io/#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav> -->
 	<section id="home-section" class="hero">
 		<div class="home-slider  owl-carousel">
 			<div class="slider-item ">
@@ -62,12 +82,11 @@
 							data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text">
 								<span class="subheading">Hello!</span>
-								<h1 class="mb-4 mt-3">I'm <span>Badik Irfandi</span></h1>
+								<h1 class="mb-4 mt-3">I'm <span>Fandi</span></h1>
 								<h2 class="mb-4 typewrite" data-period="2000"
 									data-type='[ "I am Web Develop.", "I am Mobile Develop.", "I Love Design.", "I Love to Develop." ]'>
 								</h2>
-								<p><a href="#about-section"
-										class="btn btn-primary py-3 px-4">Click me</a> </p>
+								<p><a href="#about-section" class="btn btn-primary py-3 px-4">Click me</a> </p>
 							</div>
 						</div>
 					</div>
@@ -95,7 +114,7 @@
 							<h2 class="mb-4">About Me</h2>
 							<p>Ordinary people who have very high Dreams..</p>
 							<ul class="about-info mt-4 px-md-0 px-2">
-								<li class="d-flex"><span>Name:</span> <span>Badik Irfanid</span></li>
+								<li class="d-flex"><span>Name:</span> <span>Badik Irfandi</span></li>
 								<li class="d-flex"><span>Date of birth:</span> <span>Desember 17, 1995</span></li>
 								<li class="d-flex"><span>Address:</span> <span>Kletek RT 17 RW 07, Taman-Sidoarjo</span>
 								</li>
@@ -337,70 +356,95 @@
 		</div>
 	</section>
 
-
-	<section class="ftco-section ftco-project ftco-animate" id="projects-section">
-		<div class="container">
+	<section class="ftco-animate" id="skills-section">
+		<div class="container text-center my-3">
 			<div class="row justify-content-center pb-5">
 				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Projects</h1>
+					<h1 class="big big-2">Our Projects</h1>
 					<h2 class="mb-4">Our Projects</h2>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-3">
-				</div>
-				<div class="col-md-6 col-sm-12 overlay">
-					<div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-							<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-							<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-							<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-						</ol>
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img class="d-block w-100 h-50" src="https://irfanfandi.github.io/images/project-1.jpg"
-									alt="First slide">
-							</div>
-							<div class="carousel-item">
-								<img class="d-block w-100 h-50" src="https://irfanfandi.github.io/images/project-2.jpg"
-									alt="Second slide">
-							</div>
-							<div class="carousel-item">
-								<img class="d-block w-100 h-50" src="https://irfanfandi.github.io/images/project-3.jpg"
-									alt="Third slide">
-							</div>
-							<div class="carousel-item">
-								<img class="d-block w-100" src="https://irfanfandi.github.io/images/project-4.jpg"
-									alt="Third slide">
-							</div>
-							<div class="carousel-item">
-								<img class="d-block w-100" src="https://irfanfandi.github.io/images/project-5.jpg"
-									alt="Third slide">
-							</div>
-							<div class="carousel-item">
-								<img class="d-block w-100" src="https://irfanfandi.github.io/images/project-6.jpg"
-									alt="Third slide">
+			<div class="row mx-auto my-auto">
+				<div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+					<div class="carousel-inner w-100" role="listbox">
+						<div class="carousel-item active">
+							<div class="col-md-4">
+								<div class="card card-body">
+									<img class="img-fluid" src="https://irfanfandi.github.io/images/project-1.jpg"><br>
+									<h6 style="color: black;">Web e-commerce</h6>
+									<a style="color: black;">Desain web e-commerce yang memudahkan dalam memberi
+										informasi dan penjualan produk online</a>
+								</div>
 							</div>
 						</div>
-						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
+						<div class="carousel-item">
+							<div class="col-md-4">
+								<div class="card card-body">
+									<img class="img-fluid" src="https://irfanfandi.github.io/images/project-2.jpg"><br>
+									<h6 style="color: black;">Web Application</h6>
+									<a style="color: black;">Ikut terlibat dalam pembuatan Web Application HR yang
+										memudahkan karyawan untuk berkomunikasi ke hrd dan atasan seperti cuti, expense,
+										sppd dll</a>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="col-md-4">
+								<div class="card card-body">
+									<img class="img-fluid" src="https://irfanfandi.github.io/images/project-3.jpg"><br>
+									<h6 style="color: black;">Web Application</h6>
+									<a style="color: black;">Pembutan application My Service untuk memudahkan dalam
+										mengelolah data customer yang akan dan telah service mesin.</a>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="col-md-4">
+								<div class="card card-body">
+									<img class="img-fluid" src="https://irfanfandi.github.io/images/project-4.jpg"><br>
+									<h6 style="color: black;">Web Application</h6>
+									<a style="color: black;">Web Application Restaurant membantu dalam pemesanan
+										pelanggan dan informasi menu dan harga makanan.</a>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="col-md-4">
+								<div class="card card-body">
+									<img class="img-fluid" src="https://irfanfandi.github.io/images/project-5.jpg"><br>
+									<h6 style="color: black;">Web Application</h6>
+									<a style="color: black;">Ikut terlibat dalam pembuatan Web Application CRM memberi
+										informasi terkait aktifitas sales.</a>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="col-md-4">
+								<div class="card card-body">
+									<img class="img-fluid" src="https://irfanfandi.github.io/images/project-6.jpg"><br>
+									<h6 style="color: black;">Web Application</h6>
+									<a style="color: black;"> Ikut terlibat dalam pembuatan application Payroll untuk
+										memudahkan dalam mengelolah absensi, gaji, pph21, bonus, lembur dll.</a>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-3">
+					<a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon bg-dark border  rounded-circle"
+							aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+						<span class="carousel-control-next-icon bg-dark border  rounded-circle"
+							aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
 				</div>
 			</div>
 		</div>
 	</section>
+
+
 	<section class="ftco-section contact-section ftco-no-pb ftco-animate" id="contact-section">
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-3">
@@ -411,7 +455,7 @@
 			</div>
 
 			<div class="row d-flex contact-info mb-5">
-				<div class="col-md-6 col-lg-4 col-sm-6 d-flex ftco-animate">
+				<div class="col-md-6 col-lg-4 col-sm-3 d-flex ftco-animate">
 					<div class="align-self-stretch box p-4 text-center">
 						<div class="icon d-flex align-items-center justify-content-center">
 							<span class="icon-map-signs"></span>
@@ -420,7 +464,7 @@
 						<p>Kletek RT 17 RW 07, Taman-Sidoarjo</p>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-4 col-sm-6 d-flex ftco-animate">
+				<div class="col-md-6 col-lg-4 col-sm-3 d-flex ftco-animate">
 					<div class="align-self-stretch box p-4 text-center">
 						<div class="icon d-flex align-items-center justify-content-center">
 							<span class="icon-phone2"></span>
@@ -429,7 +473,7 @@
 						<p><a href="https://irfanfandi.github.io/tel://1234567920">+62-88228455435</a></p>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-4 col-sm-6 d-flex ftco-animate">
+				<div class="col-md-6 col-lg-4 col-sm-3 d-flex ftco-animate">
 					<div class="align-self-stretch box p-4 text-center">
 						<div class="icon d-flex align-items-center justify-content-center">
 							<span class="icon-paper-plane"></span>
@@ -494,7 +538,31 @@
 			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
 				stroke="#F96D00" /></svg></div>
 
+	<script src="https://irfanfandi.github.io/js/jquery.min.js"></script>
+	<script src="https://irfanfandi.github.io/js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="https://irfanfandi.github.io/js/popper.min.js"></script>
+	<script src="https://irfanfandi.github.io/js/bootstrap.min.js"></script>
+	<script src="https://irfanfandi.github.io/js/jquery.easing.1.3.js"></script>
+	<script src="https://irfanfandi.github.io/js/jquery.waypoints.min.js"></script>
+	<script src="https://irfanfandi.github.io/js/jquery.stellar.min.js"></script>
+	<script src="https://irfanfandi.github.io/js/owl.carousel.min.js"></script>
+	<script src="https://irfanfandi.github.io/js/jquery.magnific-popup.min.js"></script>
+	<script src="https://irfanfandi.github.io/js/aos.js"></script>
+	<script src="https://irfanfandi.github.io/js/jquery.animateNumber.min.js"></script>
+	<script src="https://irfanfandi.github.io/js/scrollax.min.js"></script>
+
+	<script src="https://irfanfandi.github.io/js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+	</script>
 	<script>
+		// TYPE WRITING
 		var TxtType = function (el, toRotate, period) {
 			this.toRotate = toRotate;
 			this.el = el;
@@ -553,29 +621,29 @@
 			css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
 			document.body.appendChild(css);
 		};
-	</script>
-	<script src="https://irfanfandi.github.io/js/jquery.min.js"></script>
-	<script src="https://irfanfandi.github.io/js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="https://irfanfandi.github.io/js/popper.min.js"></script>
-	<script src="https://irfanfandi.github.io/js/bootstrap.min.js"></script>
-	<script src="https://irfanfandi.github.io/js/jquery.easing.1.3.js"></script>
-	<script src="https://irfanfandi.github.io/js/jquery.waypoints.min.js"></script>
-	<script src="https://irfanfandi.github.io/js/jquery.stellar.min.js"></script>
-	<script src="https://irfanfandi.github.io/js/owl.carousel.min.js"></script>
-	<script src="https://irfanfandi.github.io/js/jquery.magnific-popup.min.js"></script>
-	<script src="https://irfanfandi.github.io/js/aos.js"></script>
-	<script src="https://irfanfandi.github.io/js/jquery.animateNumber.min.js"></script>
-	<script src="https://irfanfandi.github.io/js/scrollax.min.js"></script>
 
-	<script src="https://irfanfandi.github.io/js/main.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-	</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+		// CARD SLIDE
+		$('#recipeCarousel').carousel({
+			interval: 5000
+		})
+
+		$('.carousel .carousel-item').each(function () {
+			var minPerSlide = 3;
+			var next = $(this).next();
+			if (!next.length) {
+				next = $(this).siblings(':first');
+			}
+			next.children(':first-child').clone().appendTo($(this));
+
+			for (var i = 0; i < minPerSlide; i++) {
+				next = next.next();
+				if (!next.length) {
+					next = $(this).siblings(':first');
+				}
+
+				next.children(':first-child').clone().appendTo($(this));
+			}
+		});
 	</script>
 
 </body>
