@@ -240,7 +240,7 @@
 		</div>
 	</section>
 
-	<section class="ftco-animate" id="skills-section">
+	<!-- <section class="ftco-animate" id="skills-section">
 		<div class="container text-center my-3">
 			<div class="row justify-content-center pb-5">
 				<div class="col-md-12 heading-section text-center ftco-animate">
@@ -279,7 +279,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 
 	<section class="ftco-section ftco-animate" id="skills-section">
